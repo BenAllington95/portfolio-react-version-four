@@ -1,0 +1,29 @@
+
+
+/* _variables.scss */
+
+$base-font-size: 16px;
+
+/* Header.scss */
+
+h1 {
+  font-size: $base-font-size * 2;
+}
+
+h2 {
+  font-size: $base-font-size * 1.8;
+}
+
+h3 {
+  font-size: $base-font-size * 1.5;
+}
+
+h4 {
+  font-size: $base-font-size * 1.2;
+}
+
+p, li {
+  font-size: $base-font-size;
+}
+
+/* Add additional element styles as needed */
