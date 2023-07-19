@@ -9,7 +9,8 @@ $base-font-size: 16px;
 /* Header.scss */
 
 h1 {
-  font-size: $base-font-size * 2;
+  font-size: $base-font-size * 5;
+  margin: 0;
 }
 
 h2 {
@@ -34,4 +35,67 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+}
+
+.hero-section {
+  z-index: 0;
+}
+
+.page-component {
+  min-height: 100vh;
+  width: 100%;
+  /* Add any additional styling for your page component */
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #1e90ff, #87ceeb);
+}
+
+
+
+.hero {
+  position: relative;
+  /* Your other styles */
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* You may need to adjust the z-index if the buttons are behind other elements */
+  z-index: 1;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: rgba(0,0,0,0.2);
+  color: rgba(255,255,255,0.5);
+  border: none;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0,0,0,0.3);
+    color: rgba(255,255,255,0.8);
+  }
+
+  ion-icon {
+    font-size: 1.5rem;
+  }
+  /* Other styles as needed, such as background-color, border, etc. */
+}
+
+.prev-arrow {
+  left: 10px; /* Adjust as needed */
+}
+
+.next-arrow {
+  right: 10px; /* Adjust as needed */
+}
+
+.disabled {
+  display: none; /* Hide the arrow when disabled */
 }

@@ -38,8 +38,7 @@ const Header = () => {
       <NavbarContext.Provider value={isHamburgerNavOpen}>
         {window.innerWidth < 768 ? 
         <HamburgerNavbar /> : <PcNavbar />}
-      </NavbarContext.Provider>
-      
+      </NavbarContext.Provider>      
     </header>
   );
 };
