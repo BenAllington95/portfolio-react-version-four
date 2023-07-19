@@ -1,3 +1,5 @@
+@import url("./header/hamburgerNavbar.css");
+@import url("./header/header.css");
 /* _variables.scss */
 /* Header.scss */
 h1 {
@@ -20,4 +22,9 @@ p, li {
   font-size: 16px;
 }
 
-/* Add additional element styles as needed *//*# sourceMappingURL=main.css.map */
+/* Add additional element styles as needed */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}/*# sourceMappingURL=main.css.map */

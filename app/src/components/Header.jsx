@@ -1,20 +1,44 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+
+import HamburgerNavbar from './HamburgerNavbar';
+
+export const NavbarContext = React.createContext();
 
 const Header = () => {
-    return (
-      <header>
-        <div className="logo">Your Portfolio Logo</div>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    )
-  }
+  const [isHamburgerNavOpen, setIsHamburgerNavOpen] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsHamburgerNavOpen(window.innerWidth >= 768);
+    };
 
-export default Header
-  
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const toggleNav = () => {
+    setIsHamburgerNavOpen(!isHamburgerNavOpen);
+  };
+
+  return (
+    <header>
+      {window.innerWidth < 768 && (
+        <button className="hamburger-nav-btn" onClick={toggleNav}>
+          {isHamburgerNavOpen ? 'close' : 'open'}
+        </button>
+      )}
+      <NavbarContext.Provider value={isHamburgerNavOpen}>
+        
+        {window.innerWidth < 768 ? 
+        <HamburgerNavbar /> : "hello"}
+      </NavbarContext.Provider>
+    </header>
+  );
+};
+
+export default Header;
