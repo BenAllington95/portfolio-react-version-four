@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import HamburgerNavbar from './HamburgerNavbar';
+import PcNavbar from './PCNavbar';
 
 export const NavbarContext = React.createContext();
 
@@ -29,14 +30,16 @@ const Header = () => {
     <header>
       {window.innerWidth < 768 && (
         <button className="hamburger-nav-btn" onClick={toggleNav}>
-          {isHamburgerNavOpen ? 'close' : 'open'}
+          {isHamburgerNavOpen ? 
+          <ion-icon name="close-sharp"></ion-icon> 
+          : <ion-icon name="reorder-three-outline"></ion-icon>}
         </button>
       )}
       <NavbarContext.Provider value={isHamburgerNavOpen}>
-        
         {window.innerWidth < 768 ? 
-        <HamburgerNavbar /> : "hello"}
+        <HamburgerNavbar /> : <PcNavbar />}
       </NavbarContext.Provider>
+      
     </header>
   );
 };

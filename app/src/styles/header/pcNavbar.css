@@ -1,0 +1,14 @@
+.pc-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  gap: 15px;
+  background: blue;
+  margin: 0;
+}
+.pc-nav li {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1em 0;
+}/*# sourceMappingURL=pcNavbar.css.map */
