@@ -63,12 +63,10 @@ const renderCustomNextArrow = (onClickHandler, hasNext) => {
         </div>
         <div className="hero-section">
           <div className="page-component">
-            <h1>Check my Projects!</h1>
           </div>
         </div>
         <div className="hero-section">
           <div className="page-component">
-            <h1>See my certificates</h1>
           </div>
         </div>
       </Carousel>
