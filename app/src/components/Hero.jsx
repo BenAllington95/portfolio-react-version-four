@@ -58,7 +58,11 @@ const renderCustomNextArrow = (onClickHandler, hasNext) => {
       >
         <div className="hero-section">
           <div className="page-component first">
-            <h1>Hi i'm Ben</h1>
+            <h1 className="first-heading">
+              <span className="const-code">const</span> <span className='ben-code'>ben</span> = {`{`}</h1>
+            <h2><span className='key-code'>role</span>: {"Front-End Developer"}</h2>
+            <h2><span className='key-code'>skills</span>: {`['html', "css", "scss", "javascript", "react"]`}</h2>
+            <h1 className="first-heading">{`}`}</h1>
           </div>
         </div>
         <div className="hero-section">

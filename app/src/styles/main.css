@@ -4,12 +4,13 @@
 /* _variables.scss */
 /* Header.scss */
 h1 {
-  font-size: 80px;
+  font-size: 40px;
   margin: 0;
 }
 
 h2 {
   font-size: 28.8px;
+  margin: 0;
 }
 
 h3 {
@@ -45,7 +46,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #1e90ff, #87ceeb);
+  flex-direction: column;
+  background: rgb(40, 44, 52);
+  padding: 3em;
+}
+.first h2 {
+  color: #ABB2BF;
+}
+.first .first-heading {
+  color: #ABB2BF;
+}
+
+.const-code {
+  color: #C792EA;
+}
+
+.ben-code {
+  color: #ABB2BF;
+}
+
+.key-code {
+  color: rgb(224, 108, 117);
 }
 
 .hero {
