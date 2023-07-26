@@ -124,3 +124,77 @@ body {
 .disabled {
   display: none; /* Hide the arrow when disabled */
 }
+
+
+/* HeroSection.css */
+
+.hero-section {
+  background-color: #1E1E1E;
+  color: #d4d4d4;
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+pre {
+  padding: 20px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 700px;
+  margin: 0; /* Remove default margin to align the code snippet to the left */
+}
+
+code {
+  display: grid;
+  place-content: center;
+  animation: blink-caret 0.75s step-end infinite;
+  text-align: left;  
+  font-size: 1rem;
+  line-height: 1.4;
+  // padding: 1em;
+
+  @media (min-width: 768px) {
+    font-size: 2rem; 
+  }
+
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #777;
+  }
+}
+
+/* Dark mode colors for code syntax highlighting */
+.token.keyword,
+.token.selector,
+.token.attr-name {
+  color: #d19a66;
+}
+
+.token.function,
+.token.tag {
+  color: #a6e22e;
+}
+
+.token.string,
+.token.char,
+.token.attr-value {
+  color: #e6db74;
+}
+
+.token.number {
+  color: #ae81ff;
+}
+
+.token.comment {
+  color: #75715e;
+  font-style: italic;
+}

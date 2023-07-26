@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
+import HeroSection from './HeroSection';
+
 const Hero = () => {
   const carouselRef = useRef(null);
 
@@ -57,13 +59,7 @@ const renderCustomNextArrow = (onClickHandler, hasNext) => {
         renderArrowNext={renderCustomNextArrow}
       >
         <div className="hero-section">
-          <div className="page-component first">
-            <h1 className="first-heading">
-              <span className="const-code">const</span> <span className='ben-code'>ben</span> = {`{`}</h1>
-            <h2><span className='key-code'>role</span>: {"Front-End Developer"}</h2>
-            <h2><span className='key-code'>skills</span>: {`['html', "css", "scss", "javascript", "react"]`}</h2>
-            <h1 className="first-heading">{`}`}</h1>
-          </div>
+          <HeroSection />
         </div>
         <div className="hero-section">
           <div className="page-component">
