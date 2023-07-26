@@ -6,9 +6,10 @@ const PcNavbar = () => {
     <div className={`pc-navbar`}>
       <nav>
         <ul className='pc-nav'>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <code>about.ben</code>
+            <code>projects.ben</code>
+            <code>contact.ben</code>
+            <code>dark.mode</code>
         </ul>
       </nav>
     </div>

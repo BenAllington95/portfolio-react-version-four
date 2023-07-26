@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import ScrollDownArrow from './ScrollDownArrow'
 
 import HeroSection from './HeroSection';
+import AboutSection from './AboutSection';
 
 const Hero = () => {
   const carouselRef = useRef(null);
@@ -52,8 +54,8 @@ const renderCustomNextArrow = (onClickHandler, hasNext) => {
         autoPlay={true} 
         showThumbs={false} 
         infiniteLoop={true} 
-        interval={10000} 
-        showIndicators={true} 
+        interval={25000} 
+        showIndicators={false} 
         emulateTouch={true}
         renderArrowPrev={renderCustomPrevArrow}
         renderArrowNext={renderCustomNextArrow}
@@ -62,8 +64,7 @@ const renderCustomNextArrow = (onClickHandler, hasNext) => {
           <HeroSection />
         </div>
         <div className="hero-section">
-          <div className="page-component">
-          </div>
+          <AboutSection />
         </div>
         <div className="hero-section">
           <div className="page-component">

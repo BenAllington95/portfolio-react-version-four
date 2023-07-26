@@ -29,7 +29,7 @@ p, li {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Courier New", monospace;
 }
 
 .hero-section {
@@ -158,29 +158,39 @@ code {
     border-color: #777;
   }
 }
-/* Dark mode colors for code syntax highlighting */
-.token.keyword,
-.token.selector,
-.token.attr-name {
-  color: #d19a66;
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 1.5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: red;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.scroll-down-arrow ion-icon {
+  font-size: 2rem;
 }
 
-.token.function,
-.token.tag {
-  color: #a6e22e;
+.about-section {
+  padding: 1em;
+  max-width: 700px;
 }
-
-.token.string,
-.token.char,
-.token.attr-value {
-  color: #e6db74;
+.about-section code h2 {
+  font-size: 2rem;
 }
-
-.token.number {
-  color: #ae81ff;
+@media (min-width: 768px) {
+  .about-section code h2 {
+    font-size: 4rem;
+  }
 }
-
-.token.comment {
-  color: #75715e;
-  font-style: italic;
+.about-section code p {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .about-section code p {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
