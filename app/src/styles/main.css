@@ -193,4 +193,10 @@ code {
   .about-section code p {
     font-size: 1.5rem;
   }
+}
+
+.certificate-image {
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
