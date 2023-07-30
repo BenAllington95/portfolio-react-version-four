@@ -226,7 +226,7 @@ code {
 // 
 
 .certificate-image {
-  height: 40vh;
+  height: 400px;
   object-fit: cover;
-  object-position: center;
+  overflow: hidden;
 }

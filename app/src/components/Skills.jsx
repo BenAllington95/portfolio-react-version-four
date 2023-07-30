@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-const codeSnippet = `const ben = {
-  name: 'Ben',
-  age: 28,
-  occupation: 'Front End Developer',
-  location: 'England'
+const codeSnippet = `const skills = {
+  html: true,
+  css: true,
+  scss: true,
+  javascript: true,
+  react: true,
+  github: true
 };`;
 
-const HeroSection = () => {
+const SkillsSection = () => {
   const [typedCode, setTypedCode] = useState('');
-  const codeSpeed = 75; // Adjust typing speed (milliseconds per character)
+  const codeSpeed = 100; // Adjust typing speed (milliseconds per character)
 
   useEffect(() => {
     let currentIndex = 0;
@@ -35,4 +37,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default SkillsSection;

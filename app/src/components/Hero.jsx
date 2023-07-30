@@ -5,6 +5,7 @@ import ScrollDownArrow from './ScrollDownArrow'
 
 import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
+import SkillsSection from './Skills'
 
 
 
@@ -128,9 +129,10 @@ const renderCustomNextArrow = (onClickHandler, hasNext) => {
                   />
                 ))}
           </Carousel>
-
-       
           </AboutSection>
+        </div>
+        <div className="hero-section">
+          <SkillsSection />
         </div>
       </Carousel>
     </section>

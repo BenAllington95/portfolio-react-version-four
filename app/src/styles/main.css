@@ -192,9 +192,8 @@ code {
 }
 
 .certificate-image {
-  height: 40vh;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
