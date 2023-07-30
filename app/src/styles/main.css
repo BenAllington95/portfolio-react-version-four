@@ -125,6 +125,7 @@ body {
   height: 100vh;
   display: grid;
   place-content: center;
+  padding: 0 1em;
 }
 
 pre {
@@ -141,13 +142,8 @@ code {
   place-content: center;
   animation: blink-caret 0.75s step-end infinite;
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.4;
-}
-@media (min-width: 768px) {
-  code {
-    font-size: 2rem;
-  }
 }
 
 @keyframes blink-caret {
@@ -176,14 +172,14 @@ code {
 
 .about-section {
   padding: 1em;
-  max-width: 700px;
+  max-width: 600px;
 }
 .about-section code h2 {
   font-size: 2rem;
 }
 @media (min-width: 768px) {
   .about-section code h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 .about-section code p {
@@ -191,12 +187,14 @@ code {
 }
 @media (min-width: 768px) {
   .about-section code p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
 .certificate-image {
-  height: 50vh;
+  height: 40vh;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=main.css.map */
